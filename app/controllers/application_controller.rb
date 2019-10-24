@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
   end 
   
   post '/recipes' do 
-    
+    @recipe = recipe.New(params)
     
 
 end
