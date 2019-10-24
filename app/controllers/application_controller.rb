@@ -5,7 +5,7 @@ class ApplicationController < Sinatra::Base
   end
 
   # code actions here!
-  get /recipes do 
+  get '/recipes' do 
     @recipes = Recipe.all 
     erb:index
   end 
@@ -14,7 +14,8 @@ class ApplicationController < Sinatra::Base
     erb :new
   end 
   
-  post /recipes do 
+  post '/recipes' do 
+    
     
 
 end
