@@ -28,6 +28,6 @@ class ApplicationController < Sinatra::Base
     if @recipe 
       erb :edit 
     else 
-      redirect
+      redirect '/recipes'
 
 end
