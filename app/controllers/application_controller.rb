@@ -31,5 +31,7 @@ class ApplicationController < Sinatra::Base
       redirect '/recipes'
     end 
   end 
+  
+  
 
 end
