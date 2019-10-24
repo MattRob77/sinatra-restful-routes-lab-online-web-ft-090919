@@ -10,7 +10,9 @@ class ApplicationController < Sinatra::Base
     erb:index
   end 
   
-  
+  get/recipe do 
+    erb:index
+  end 
     
 
 end
