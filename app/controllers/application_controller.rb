@@ -13,6 +13,8 @@ class ApplicationController < Sinatra::Base
   get/recipe do 
     erb:index
   end 
+  
+  
     
 
 end
