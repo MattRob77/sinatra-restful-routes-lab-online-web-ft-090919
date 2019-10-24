@@ -29,5 +29,7 @@ class ApplicationController < Sinatra::Base
       erb :edit 
     else 
       redirect '/recipes'
+    end 
+  end 
 
 end
