@@ -14,9 +14,13 @@ class ApplicationController < Sinatra::Base
     erb :new
   end 
   
-  post '/recipes' do 
-    @recipe = recipe.New(params)
-    if @recipe.save 
-    
+   post '/recipes' do
+    @recipe = Recipe.new(params)
+    if @recipe.save
+      redirect "/recipes/#{@recipe.id}"
+    else
+      redirect '/recipes/new'
+    end
+  end
 
 end
